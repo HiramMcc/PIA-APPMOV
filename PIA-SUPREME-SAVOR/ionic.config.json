@@ -1,0 +1,7 @@
+{
+  "name": "PIA-SUPREME-SAVOR",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
