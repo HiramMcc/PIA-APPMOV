@@ -9,9 +9,34 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">reservacion</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Reervación</ion-card-title>      
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item> 
+        <ion-label position="floating">Nombre de usuario</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item> 
+        <ion-label position="floating">Día</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item> 
+        <ion-label position="floating">Hora</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item> 
+        <ion-label position="floating">Cantidad de personas</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <br>
+      <ion-button>
+        Reservar
+      </ion-button>
+
+    </ion-card-content>
+  </ion-card>
 </ion-content>
