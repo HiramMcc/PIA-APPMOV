@@ -15,23 +15,21 @@
     </ion-card-header>
   
     <ion-card-content>
+      <form >
       <ion-item> 
-        <ion-label position="floating">Nombre de usuario</ion-label>
-        <ion-input type="text"></ion-input>
+        <ion-label position="floating" aria-label="Email">Correo</ion-label>
+        <ion-input type="text" [(ngModel)]="user.email"></ion-input>
       </ion-item>
 
       <ion-item> 
-        <ion-label position="floating">Contraseña</ion-label>
-        <ion-input type="password"></ion-input>
+        <ion-label position="floating" aria-label="Password">Contraseña</ion-label>
+        <ion-input type="password" [(ngModel)]="user.password"></ion-input>
       </ion-item>
-      <ion-item> 
-        <ion-label position="floating">Confirmar contraseña</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
+      
       <br>
-      <ion-button>
-        Registrarse
-      </ion-button>
+      <ion-button size="larger" (clcik)="onRegister">Registrar</ion-button>
+  
+    </form>
 
     </ion-card-content>
   </ion-card>
